@@ -1,0 +1,62 @@
+\documentclass[a4paper]{scrartcl}
+
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman]{babel}
+
+\usepackage{url,amsmath,amssymb,mathrsfs,enumerate,dsfont}
+\usepackage[space,extendedchars]{grffile}
+\usepackage{algorithm,algorithmic}
+\usepackage{verbatim}
+\usepackage{listings}
+\usepackage{geometry}
+\usepackage{tikz}
+\usepackage{etoolbox}
+\usetikzlibrary{automata,arrows}
+\usepackage{fancyhdr}
+\usepackage{subfigure}
+\usepackage[ngerman]{babel}
+\usepackage{hyperref}
+\usepackage{blindtext}
+\usepackage{framed}
+\usepackage{paralist}
+\usepackage{multirow}
+
+\def\ojoin{\setbox0=\hbox{$\bowtie$}%
+  \rule[-.02ex]{.25em}{.4pt}\llap{\rule[\ht0]{.25em}{.4pt}}}
+\def\leftouterjoin{\mathbin{\ojoin\mkern-5.8mu\bowtie}}
+\def\rightouterjoin{\mathbin{\bowtie\mkern-5.8mu\ojoin}}
+\def\fullouterjoin{\mathbin{\ojoin\mkern-5.8mu\bowtie\mkern-5.8mu\ojoin}}
+
+\usetikzlibrary{arrows,shapes, automata}
+\setkomafont{disposition}{\normalfont\bfseries}
+\setlength\parindent{0pt}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%
+% BITTE HIER ANPASSEN.  %
+\title{Web 2.0}
+\author{Tom Paßberg , Iain Dorsch, }
+%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+\maketitle
+\section*{Aufgabe 2}
+\begin{enumerate}[a)]
+    \item Das Internet besteht aus allen Netzwerken, allen Computern und allen Daten. Das WWW ist eine
+    von vielen Anwendungen des Internets. WWW bezeichnet die Menge aller Webseiten, die über das Internet 
+    von Webservern abrufbar sind.
+    \item RFC: Request for Comments
+    \item DNS: Domain Name System
+    \item \texttt{1101:0ABC:0000:0000:A002:0000:002F:10FF} $\to$ \texttt{1101:ABC::A002:0:2F:10FF}
+    \item Wenn man mehrfach "::" verwenden dürfte würden mehrere Adressen die selbe komprimierte Form 
+    teilen. Damit wäre es nicht möglich die vollständige IP eindeutig zu rekonstruieren. \\
+    Beispiel: \\
+    \texttt{B100:1ABC:0000:0000:002F:0000:0000:ABCD} und \\
+    \texttt{B100:1ABC:0000:002F:0000:0000:0000:ABCD} würden beide \\
+    \texttt{B100:1ABC::2F::ABCD} ergeben.
+    \item Bei jeder Verbindung über das TCP-Protokoll werden zwei eindeutige Endpunkte
+    identifiziert, die ein geordnetes Paar darstellen. Jedes Paar besteht aus einer IP-Adresse und einem Port.
+    Die TCP-Verbindung wird also durch 4 Parameter beschrieben.
+\end{enumerate}
+
+
+\end{document}
